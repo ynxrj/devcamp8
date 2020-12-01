@@ -5,11 +5,6 @@
   font-family: 'PT Sans', sans-serif;
 }
 
-body{
-  overflow: auto;
-  background-color: #1c1a1b;
-}
-
 .event, .test, .vr, .work{
   display: flex;
   height: 92.7vh;

@@ -1,13 +1,13 @@
 import React from 'react';
 import '../../App.css';
 import Navbar from '../Navbar'
-import Work from '../Work'
+import Art from '../Art'
 
 export default function AllWork() {
   return (
     <>
       <Navbar />
-      <Work />
+      <Art />
     </>
   )
 }

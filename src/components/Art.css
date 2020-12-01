@@ -1,65 +1,58 @@
 *{
   padding: 0;
   margin: 0;
+  box-sizing: border-box;
 }
 
-.cards {
-  padding: 3rem;
-  top: 0;
-  left: 0;
-  bottom: 0;
-  right: 0;
+body{
+  background-color: #000000;
+}
+
+.arts {
+  padding: 3rem ;
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
+  width: 100%;
   height: 100%;
 }
 
-h1 {
+.title {
   text-align: center;
   color: #fff;
   font-size: 45px;
 }
 
-.cards__container {
+.arts__container {
   display: flex;
   flex-flow: column;
   align-items: center;
-  max-width: 100%;
-  width: 90%;
+  width: 100%;
   margin: 0 auto;
+  height: inherit;
 }
 
-.cards__wrapper {
+.arts__wrapper {
   position: relative;
   margin: 50px 0 45px;
 }
 
-.cards__items{
-  margin-bottom: 24px;
+.arts__items{
+  margin-bottom: 1px;
 }
 
-.cards__item{
+.arts__item{
   display: flex;
   flex: 1;
-  margin: 0 1rem;
+  margin: 0 0.75rem;
   border-radius: 10px;
-  min-width: 250px;
+  min-width: 225px;
   min-height: auto;
-  max-width: 250px;
-  max-height: 285px;
+  max-width: 200px;
+  max-height: 270px;
 }
 
-.cards__item__link {
-  background-color: rgba(255, 255, 255);
-  display: flex;
-  flex-flow: column;
-  width: 100%;
-  overflow: hidden;
-  text-decoration: none;
-}
-
-.cards__item__pic-wrap {
+.arts__item__pic-wrap {
   position: relative;
   width: 100%;
   padding-top: 67%;
@@ -71,21 +64,7 @@ h1 {
   animation-duration: 2s;
 }
 
-.cards__item__pic-wrap::after {
-  content: attr(data-category);
-  position: absolute;
-  bottom: 0;
-  margin-left: 10px;
-  padding: 6px 8px;
-  max-width: calc((100%) - 60px);
-  font-size: 12px;
-  font-weight: 700;
-  color: #fff;
-  background-color: #1f98f4;
-  box-sizing: border-box;
-}
-
-.cards__item__img{
+.arts__item__img{
   position: absolute;
   top: 0;
   right: 0;
@@ -100,17 +79,25 @@ h1 {
   transition: all 0.2s linear;
 }
 
-.cards__item__img:hover {
+.arts__item__img:hover {
   transform: scale(1.1);
 }
 
-.cards__item__info {
+.arts__item__info {
   align-items: center;
   padding: 10px 30px 10px;
   color: #262626;
 }
 
-.cards__item__text {
+.arts__item__link {
+  display: flex;
+  flex-flow: column;
+  width: 100%;
+  overflow: hidden;
+  text-decoration: none;
+}
+
+.arts__item__text {
   font-size: 18px;
   line-height: 24px;
   overflow: hidden;
@@ -127,13 +114,13 @@ h1 {
 }
 
 @media only screen and (min-width: 1024px) {
-  .cards__items{
+  .arts__items{
     display: flex;
   }
 }
 
 @media only screen and (max-width: 1024px) {
-  .cards__item{
+  .arts__item{
     margin-bottom: 2rem;
   }
 }

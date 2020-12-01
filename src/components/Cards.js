@@ -14,7 +14,7 @@ function Cards(props) {
               src='images/img-1.jpg'
               text="The Long Journey"
               label='Landscape'
-              path='/work'
+              path='/art'
               
             />
             <CardItem
