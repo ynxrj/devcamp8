@@ -6,12 +6,9 @@ video {
   z-index: -1;
 }
 
-body{
-  overflow: hidden;
-}
-
 .start-container {
-  background-image: url('/images/img-9.jpg');
+  /* background-image: url('/images/img-9.jpg'); */
+  background-color: #000000;
   height: 100vh;
   width: 100%;
   display: flex;

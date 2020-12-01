@@ -1,20 +1,23 @@
 import React from 'react';
-import Navbar from './components/Navbar';
 import './App.css';
 import Home from './components/pages/Home';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
-import Main from './components/pages/Main';
+import Event from './components/pages/Event';
 import Test from './components/pages/Test'
+import VR from './components/pages/Vr'
+import Work from './components/pages/Work'
+
 
 function App() {
   return (
     <>
       <Router>
-        <Route path='/' exact component={Home} />
-        <Navbar />
         <Switch>
-            <Route path='/main' component={Main} />
+            <Route path='/' exact component={Home} />
+            <Route path='/vr' component={VR} />
+            <Route path='/event' component={Event} />
             <Route path='/test' component={Test} />
+            <Route path='/work' component={Work} />
         </Switch>
       </Router>
     </>

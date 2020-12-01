@@ -1,12 +1,14 @@
 import React from 'react';
-import '../../App.css';
+import '../../App.css'
+import Cards from '../Cards';
 import Navbar from '../Navbar'
 
-export default function Test() {
+export default function Event() {
   return (
     <>
       <Navbar />
-      <h1 className='test'>Maintenance</h1>
+      <Cards />
     </>
   )
+  
 }

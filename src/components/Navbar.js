@@ -28,7 +28,7 @@ function Navbar() {
     <>
       <nav className='navbar'>
         <div className='navbar-container'>
-          <Link to='/' className='navbar-logo' onClick={closeMobileMenu}>
+          <Link to='/vr' className='navbar-logo' onClick={closeMobileMenu}>
             ARTX
           </Link>
           <div className='menu-icon' onClick={handleClick}>
@@ -36,14 +36,14 @@ function Navbar() {
           </div>
           <ul className={click ? 'nav-menu active' : 'nav-menu'}>
             <li className='nav-item'>
-              <Link to='/Test' className='nav-links' onClick={closeMobileMenu}>
+              <Link to='/event' className='nav-links' onClick={closeMobileMenu}>
               JoinUP
               </Link>
             </li>
 
             <li className='nav-item'>
               <Link
-                to='/Test'
+                to='/event'
                 className='nav-links'
                 onClick={closeMobileMenu}
               >
@@ -53,7 +53,7 @@ function Navbar() {
 
             <li className='nav-item'>
               <Link
-                to='/Test'
+                to='/event'
                 className='nav-links'
                 onClick={closeMobileMenu}
               >

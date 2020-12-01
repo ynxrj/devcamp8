@@ -6,9 +6,9 @@ import './Start.css';
 function Start() {
   return (
     <div className='start-container'>
-     
+      
       <h1>ART E-XHIBITION</h1>
-      <p>Discover The World</p>
+      <p>Create Your Own World</p>
       <div className='start-btn'>
         <Button
           className='btn'
